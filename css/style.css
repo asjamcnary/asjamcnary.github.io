@@ -1,0 +1,113 @@
+    /*    
+  .my-class {  у кого класс my-class, у того color:red
+    color: red;
+  }*/
+    /* у кого id "menu", у того background pink*/
+    /*
+   .названиекласса { св-во:значение;}
+   #названиеid {св-во:значение;}*/
+    /* все LI которые внутри header */
+    header li {
+        width: 8vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top_right_menu div {
+        padding-right: 10px;
+    }
+
+    .top_right_menu {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu {
+        color: black;
+        /*background: pink;*/
+    }
+
+    /* то, что внутри main и header будет по горизонтали */
+    .main,
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .menu_ul {
+        display: flex;
+        flex-wrap: nowrap;
+        /*  border: 1px solid black;*/
+        height: 14vh;
+        justify-content: center;
+    }
+
+    .center {
+        padding: 1vw;
+        /*  text-align: center;
+        border: 1px solid red;*/
+        width: 50vw;
+    }
+
+    .left_side {
+        padding: 1vw;
+        width: 20vw;
+
+    }
+
+    .right_side {
+        padding: 1vw;
+        width: 20vw;
+
+    }
+
+    /* все a которые внутри у элемента с классом menu_ul
+      
+      div.a div#b span div ul li a { }
+      a, который в li, который в ul, который в div 
+
+      div > ul > li > a {}
+
+      */
+    ul.menu_ul a,
+    .left_side a,
+    .right_side a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .left_side ul {
+        padding-left: 5px;
+    }
+
+    .right_side ul {
+        border-left: 1px solid black;
+        list-style-type: none;
+        padding-left: 20px;
+    }
+
+
+    ul.menu_ul {
+        list-style-type: none;
+    }
+
+    .left_side ul {
+        list-style-type: none;
+    }
+
+    #logo {
+        background: url(../images/logo.png);
+        /* height: 100px; */
+        width: 10vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    footer {
+        text-align: center;
+    }
